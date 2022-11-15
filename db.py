@@ -1,4 +1,6 @@
 # mysql - mysql-connector-python
+# redis py 
+
 
 class DBInterface:
     # интерфейс для бд
@@ -25,3 +27,6 @@ class DBInterface:
             self.cnx.close()
         except Exception as e:
             logger.error(e)
+
+
+# redisClient = redis.Redis(host='localhost',port=6379,db="name")
